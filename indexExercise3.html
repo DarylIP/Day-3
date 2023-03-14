@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .frame1 {
+        position: relative;
+        width: 3376px;
+        height: 1970px;
+        background-color: #040404;
+        z-index: -1;
+      }
+
+      .rec1 {
+        position: absolute;
+        width: 2362px;
+        height: 1594px;
+        left: 507px;
+        top: 188px;
+        background: linear-gradient(106.32deg), rgba(255, 255, 255, 0.34) 0%,
+          rgba(255, 255, 255, 0) 75%;
+        border: 8px solid#ffffff;
+        backdrop-filter: blur(100px);
+        border-radius: 80px;
+      }
+
+      .man {
+        position: absolute;
+        width: 87px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 44px;
+        font-family: "Roboto";
+        line-height: 52px;
+        top: 284px;
+        left: 1009px;
+        color: white;
+      }
+      .woman {
+        position: absolute;
+        width: 151px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 44px;
+        font-family: "Roboto";
+        line-height: 52px;
+        top: 284px;
+        left: 1184px;
+        color: white;
+      }
+      .kid {
+        position: absolute;
+        width: 64px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 44px;
+        font-family: "Roboto";
+        line-height: 52px;
+        top: 284px;
+        left: 1437px;
+        color: white;
+      }
+
+      .explore {
+        position: absolute;
+        width: 146px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 44px;
+        font-family: "Roboto";
+        line-height: 52px;
+        top: 284px;
+        left: 1586px;
+        color: white;
+      }
+
+      .search {
+        position: absolute;
+        width: 136px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 44px;
+        font-family: "Roboto";
+        line-height: 52px;
+        top: 284px;
+        left: 2198px;
+        color: white;
+      }
+
+      .rec2 {
+        position: absolute;
+        width: 2006px;
+        height: 859px;
+        left: 685px;
+        top: 555px;
+
+        border: 7px solid#ffffff;
+        border-radius: 395px;
+      }
+
+      .NI {
+        position: absolute;
+        width: 644px;
+        height: 695px;
+        font-weight: 600;
+        font-size: 570px;
+        font-family: "Roboto";
+
+        top: 98px;
+        left: 165px;
+        color: white;
+      }
+
+      .KE {
+        position: absolute;
+        width: 644px;
+        height: 695px;
+        font-weight: 600;
+        font-size: 570px;
+        font-family: "Roboto";
+
+        top: 98px;
+        left: 1082px;
+        z-index: 3;
+        color: white;
+      }
+
+      .Shoe {
+        position: absolute;
+
+        left: 800.48px;
+        top: 175.59px;
+        z-index: 2;
+      }
+      .nike {
+        position: absolute;
+        left: 817px;
+        top: 653px;
+        background: transparent;
+      }
+
+      .nike-small {
+        position: absolute;
+        left: 641px;
+        top: 270px;
+        background: transparent;
+      }
+
+      .search-logo {
+        position: absolute;
+        left: 2125px;
+        top: 274px;
+        background: transparent;
+      }
+
+      .rec3 {
+        position: absolute;
+        width: 297px;
+        height: 111px;
+        left: 2445px;
+        top: 252px;
+        background: #ff64a5;
+        box-shadow: 0px, 4px, 4px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
+      }
+
+      .shop {
+        position: absolute;
+        width: 201px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 44px;
+        font-family: "Roboto";
+
+        top: 29px;
+        left: 48px;
+        color: white;
+      }
+      .parent-cart {
+        position: absolute;
+        width: 472px;
+        height: 111px;
+        top: 1589px;
+        left: 669px;
+        background: #4729ff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
+      }
+
+      .add-to-cart {
+        position: absolute;
+        width: 311px;
+        height: 52px;
+        font-weight: 400;
+        font-size: 44px;
+        font-family: "Roboto";
+        font-style: normal;
+
+        top: 33px;
+        left: 161px;
+        color: white;
+      }
+
+      .cart-bag {
+        position: absolute;
+        top: 26px;
+        left: 66px;
+      }
+
+      .Ultra-parent {
+        position: absolute;
+        top: 1495px;
+        left: 2171px;
+        width: 617px;
+        height: 234px;
+      }
+
+      .Ultra {
+        position: absolute;
+        top: 13px;
+        left: 11px;
+        width: 317px;
+        height: 52px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        color: #ffffff;
+      }
+
+      .When {
+        position: absolute;
+        top: 88px;
+        left: 11px;
+        width: 584px;
+        height: 117px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame1"></div>
+    <div class="rec1"></div>
+    <div class="man">Man</div>
+    <div class="woman">Woman</div>
+    <div class="kid">Kid</div>
+    <div class="explore">Explore</div>
+    <div class="search">Search</div>
+    <div class="rec2">
+      <div class="NI">NI</div>
+      <div class="KE">KE</div>
+    </div>
+    <div class="rec3">
+      <div class="shop">Shop Now</div>
+    </div>
+    <div class="parent-cart">
+      <div class="add-to-cart">Add to Cart</div>
+      <img class="cart-bag" src="Images/Cart Bag.png" alt="Cart Bag" />
+    </div>
+    <img class="search-logo" src="Images/Search.png" alt="Search Logo" />
+    <img class="Shoe" src="Images/Shoe.png" alt="Shoe" />
+    <img class="nike" src="Images/Nike Logo.png" alt="Nike Logo" />
+    <img
+      class="nike-small"
+      src="Images/Nike Small Logo.png"
+      alt="Nike Small Logo"
+    />
+    <div class="Ultra-parent">
+      <p class="Ultra">Ultra Mechnics</p>
+      <p class="When">
+        When a player in, a custom motor and gear train senses the tension
+        needed by the foot
+      </p>
+    </div>
+  </body>
+</html>
