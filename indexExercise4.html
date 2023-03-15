@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Work Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Pattaya&family=Vollkorn&family=Yaldevi:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .frame-main {
+        position: relative;
+        width: 595px;
+        height: 842px;
+        background: #110f57;
+      }
+
+      .frame-1 {
+        position: absolute;
+        top: 32px;
+        left: 26px;
+        width: 350px;
+        height: 545px;
+        /* border: solid; */
+      }
+
+      .frame-studio {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        width: 128px;
+        height: 41px;
+        /* border: solid; */
+      }
+
+      .STU {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 113px;
+        height: 33px;
+        font-family: "Yaldevi";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #ffffff;
+      }
+
+      /* .triangle {
+        position: absolute;
+        box-sizing: border-box;
+        width: 0px;
+        height: 0px;
+        top: 8.5px;
+        left: 43px;
+        border: 20px solid transparent;
+        border-left-color: #00fb82;
+        : 50%; */
+      /* } */
+      .tri {
+        left: 42px;
+        top: 8px;
+        position: absolute;
+      }
+
+      .IOS {
+        position: absolute;
+        top: 2px;
+        left: 63px;
+        width: 113px;
+        height: 33px;
+        font-family: "Yaldevi";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #ffffff;
+      }
+      .nine {
+        position: absolute;
+        top: 3.5px;
+        left: 101px;
+        width: 113px;
+        height: 33px;
+        font-family: "Pattaya";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: #00fb82;
+      }
+      .frame-work {
+        position: absolute;
+        top: 106px;
+        left: 12px;
+        width: 291px;
+        height: 141px;
+        /* border: solid; */
+      }
+      .Work-Together {
+        position: absolute;
+        top: 7px;
+        left: 1px;
+        width: 413px;
+        height: 132px;
+        font-family: "Vollkorn";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 66px;
+        color: #00fb82;
+      }
+      .frame-Lorem {
+        position: absolute;
+        top: 280px;
+        left: 12px;
+        width: 330px;
+        height: 165px;
+        /* border: solid; */
+      }
+      .Lorem {
+        position: absolute;
+        top: -4px;
+        left: -1px;
+        width: 329px;
+        height: 165px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(226, 226, 226, 0.7);
+      }
+
+      .yellow-box {
+        position: absolute;
+        box-sizing: border-box;
+
+        width: 41px;
+        height: 43px;
+        border: 4px solid;
+        color: rgba(189, 225, 0, 1);
+      }
+
+      .yellow-box1 {
+        position: absolute;
+        box-sizing: border-box;
+        left: 12px;
+        top: 489px;
+      }
+      .yellow-box2 {
+        position: absolute;
+        box-sizing: border-box;
+        left: 53px;
+        top: 489px;
+      }
+      .yellow-box3 {
+        position: absolute;
+        box-sizing: border-box;
+        left: 97px;
+        top: 489px;
+      }
+      .yellow-box4 {
+        position: absolute;
+        box-sizing: border-box;
+        left: 141px;
+        top: 489px;
+      }
+
+      .circle {
+        position: absolute;
+        box-sizing: border-box;
+
+        width: 35px;
+        height: 35px;
+        border: 18px solid;
+        border-radius: 50%;
+        color: #ffffff;
+      }
+      .circle1 {
+        position: absolute;
+        box-sizing: border-box;
+        left: 0px;
+        top: 0px;
+      }
+      .circle2 {
+        position: absolute;
+        box-sizing: border-box;
+        left: 40px;
+        top: 0px;
+      }
+      .circle3 {
+        position: absolute;
+        box-sizing: border-box;
+        left: 83px;
+        top: 0px;
+      }
+      .circle4 {
+        position: absolute;
+        box-sizing: border-box;
+        left: 127px;
+        top: 0px;
+      }
+
+      .Google {
+        left: 20%;
+        top: 20%;
+        position: absolute;
+      }
+      .Facebook {
+        left: 15%;
+        top: 15%;
+        position: absolute;
+      }
+
+      .Twitter {
+        left: 13%;
+        top: 16%;
+        position: absolute;
+      }
+
+      .Linkedin {
+        left: 13%;
+        top: 16%;
+        position: absolute;
+      }
+
+      .Main-Photo {
+        left: 0px;
+        top: 504px;
+        position: absolute;
+      }
+
+      .parent-line {
+        position: absolute;
+        width: 193px;
+        height: 155px;
+        /* border: solid; */
+        left: 392px;
+        top: 0px;
+      }
+
+      .line1 {
+        width: 88px;
+        height: 0px;
+        left: -20px;
+        border: 10px solid#00fb82;
+        transform: rotate(90deg);
+        position: absolute;
+        border-radius: 20px;
+      }
+      .line2 {
+        width: 176px;
+        height: 0px;
+        left: -20px;
+        top: 0px;
+        border: 10px solid#fff500;
+        transform: rotate(90deg);
+        position: absolute;
+        border-radius: 20px;
+      }
+
+      .line3 {
+        width: 176px;
+        height: 0px;
+        top: 60px;
+        left: 25px;
+        border: 10px solid #00fb82;
+        transform: rotate(90deg);
+        position: absolute;
+        border-radius: 20px;
+      }
+      .line4 {
+        width: 195px;
+        height: 0px;
+        top: 25px;
+        left: 60px;
+        border: 10px solid#fff500;
+        transform: rotate(90deg);
+        position: absolute;
+        border-radius: 20px;
+      }
+
+      .group2 {
+        position: absolute;
+        top: 386px;
+        left: 411px;
+      }
+      .group1 {
+        position: absolute;
+        top: 620.89px;
+        left: 0px;
+      }
+      /* .parent-ellipse {
+        position: absolute;
+        width: 202px;
+        height: 134.55px;
+        left: 400px;
+        top: 400px;
+        border: solid;
+      }
+      .ellipse {
+        position: absolute;
+        display: inline-block;
+      }
+
+      .ellipse1 {
+        position: absolute;
+        width: 19.87px;
+        height: 19.87px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      li {
+        display: inline-block;
+        
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="frame-main">
+      <div class="frame-1">
+        <div class="frame-studio">
+          <p class="STU">STU</p>
+          <img class="tri" src="Images/triangle.png" alt="triangle" />
+          <p class="IOS">IOS</p>
+          <p class="nine">9</p>
+        </div>
+
+        <div class="frame-work">
+          <p class="Work-Together">Work Together</p>
+        </div>
+        <div class="frame-Lorem">
+          <p class="Lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+        <div class="yellow-box yellow-box1">
+          <div class="circle circle1"></div>
+          <div class="circle circle2"></div>
+          <div class="circle circle3"></div>
+          <div class="circle circle4"></div>
+          <img class="Google" src="Images/Google.png" alt="Google" />
+        </div>
+        <div class="yellow-box yellow-box2">
+          <img class="Facebook" src="Images/Facebook.png" alt="Facebook" />
+        </div>
+        <div class="yellow-box yellow-box3">
+          <img class="Twitter" src="Images/Twitter.png" alt="Twitter" />
+        </div>
+        <div class="yellow-box yellow-box4">
+          <img class="Linkedin" src="Images/Linkedin.png" alt="Linkedin" />
+        </div>
+        <img src="" alt="" />
+        <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+      </div>
+      <img
+        class="Main-Photo"
+        src="Images/People at cafe smiling.png"
+        alt="Friendly faces"
+      />
+      <div class="parent-line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <!-- <div class="ellipse ellipse1"></div> -->
+      </div>
+      <img class="group2" src="Images/Group 2.png" alt="Circle Decoration" />
+      <img class="group1" src="Images/Group 1.png" alt="Circle Decoration" />
+      <div
+        style="
+          position: absolute;
+          width: 19.87px;
+          height: 19.87px;
+          left: 143.27px;
+          top: 619.5px;
+          background: #ffffff;
+          border-radius: 50%;
+        "
+      ></div>
+    </div>
+  </body>
+</html>
